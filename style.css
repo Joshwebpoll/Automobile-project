@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+:root {
+    --green: #27ae60;
+    --black: #2c2c54;
+    --col: #113d78;
+}
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+html {
+    overflow-x: hidden;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+}
+
+/*--nav logo--*/
+
+.logo .name {
+    color: rgba(52, 45, 81);
+    font-size: 1.5rem;
+}
+.logo ul li a {
+    color: rgba(52, 45, 81);
+    font-size: 1rem;
+    font-weight: 600;
+    font-size: 1rem;
+}
+.logo ul li::after {
+    content: " ";
+    width: 0;
+    height: 2px;
+    background-color: red;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.logo ul li:hover::after {
+    width: 100%;
+}
+.header {
+    background-image: linear-gradient(to right, rgba(52, 45, 81, 0.9), rgba(52, 45, 81, 0.9)), url(./img/headerimage.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.header .container .center {
+    padding-top: 15%;
+}
+.header .container .center h1 {
+    font-size: 3.25rem;
+    font-weight: bold;
+}
+.service .card-container h5 {
+    color: var(--col);
+    font-weight: 900;
+}
+.chooseus {
+    background: rgb(240, 241, 243);
+    padding: 5rem 0;
+}
+.chooseus .icon {}
+.chooseus .icon i {
+    font-size: 4rem;
+    padding: 1rem;
+    color: indianred;
+}
+.gallary {
+    padding: 6rem 0;
+}
+.process {
+    background: rgb(240, 241, 243);
+    padding: 4rem 0;
+}
+.request {
+    background-image: linear-gradient(to right, rgba(52, 45, 81, 0.9), rgba(52, 45, 81, 0.9)), url(./img/tyre.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4rem 0;
+}
+.about-us {
+    padding: 7rem 0;
+}
+
+/*---testimonies---*/
+
+.card-bg {
+    background: rgba(52, 45, 81);
+}
+.testimonies {
+    padding: 5rem 0;
+}
+
+/*---special---*/
+
+.special {
+    padding: 5rem 0;
+    background: rgb(240, 241, 243);
+}
+
+/*--requestcontact--*/
+
+.requestcontact {
+    background-image: linear-gradient(to right, rgba(52, 45, 81, 0.9), rgba(52, 45, 81, 0.9)), url(./img/contactus.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 4rem 0;
+}
+
+/*blog section*/
+
+.blog {
+    padding: 5rem 0;
+}
+.resize img {
+    height: 500px;
+}
+.partner {
+    padding: 5rem 0;
+    background: rgb(240, 241, 243);
+}
+
+/*direction section*/
+
+.direction {
+    padding: 5rem 0;
+    background: rgba(52, 45, 81);
+}
+
+/*contact section*/
+
+.contact-us {
+    padding: 5rem 0;
+}
+.form-area {
+    background: rgba(52, 45, 81);
+    padding: 5rem;
+}
+textarea {
+    resize: none
+}
+
+/*-- footer start here--*/
+
+.footer {
+    background: rgba(52, 45, 81);
+    padding: 5rem 4rem .5rem 4rem;
+}
+.footer ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer ul li {
+    padding-bottom: .4rem;
+}
+.footer h5 {
+    font-size: 1rem;
+}
+.footer ul a {
+    text-decoration: none;
+    color: white;
+}
+
+/*media queries*/
+
+@media (max-width: 768px) {
+    .logo ul li:hover::after {
+        width: 0%;
+        color: white;
+    }
+}
